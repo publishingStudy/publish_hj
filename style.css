@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+.top_bar{
+  position: fixed;
+  right: 20px;
+  top: 10px;
+
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+}
+
+#gmail{
+  font-size:13px;
+  margin-right: 15px;
+}
+
+#image{
+  font-size:13px;
+  margin-right: 20px;
+}
+
+#app{
+  width: 25px;
+  height: 23px;
+  margin-right: 20px;
+}
+
+#app_svg{
+  fill: #5B5C5C;
+}
+
+#account{
+  background-color:#6F8E98;
+  width:35px; height:35px;
+  border-radius:75px;
+  text-align:center;
+  font-size:20px; color:#fff;
+  line-height:35px;
+}
+
+
+.logo{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#logo_img{
+  width: 277px;
+  height: 95px;
+}
+
+
+.search_bar{
+  position: fixed;
+  top:40%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search_bar{
+  border: 1px;
+  border-radius: 40px;
+  box-shadow: 1px 1px 4px #B0B1B2;
+  width: 561px;
+  height: 44px;
+}
+
+input::placeholder{
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+
+.direct{
+  position: fixed;
+  top:53%;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#direct_plus{
+  background-color:#F0F1F3;
+  width:50px; height:50px;
+  border-radius:75px;
+  text-align:center;
+  font-size:30px;
+  line-height:45px;
+  font-weight: bold;
+}
+
+#direct_add{
+  margin-top: 10px;
+  font-size: 13px;
+}
