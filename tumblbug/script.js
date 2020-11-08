@@ -169,13 +169,15 @@ const change = (cur_index) => {
 $(window).resize(() => {
     if(window.innerWidth > 1080){
         img_width = 680;
-        console.log(img_width);
+        //console.log(img_width);
         img_list.style.width = img_width * (img_len) + 'px';
         img_1.style.width = img_width + 'px';
         img_2.style.width = img_width + 'px';
         img_3.style.width = img_width + 'px';
         img_4.style.width = img_width + 'px';
         img_5.style.width = img_width + 'px';
+        img_list.firstElementChild.style.width = img_width + 'px';
+        img_list.lastElementChild.style.width = img_width + 'px';
         
         img_list.style.transition = '0ms';
         img_list.style.transform = "translate3d(-" + img_width * cur_index + 'px, 0px, 0px)';
@@ -183,13 +185,15 @@ $(window).resize(() => {
     }
     if(window.innerWidth <= 1080 && window.innerWidth > 991){
         img_width = window.innerWidth*0.65;
-        console.log("2",img_width);
+        //console.log("2",img_width);
         img_list.style.width = img_width * (img_len) + 'px';
         img_1.style.width = img_width + 'px';
         img_2.style.width = img_width + 'px';
         img_3.style.width = img_width + 'px';
         img_4.style.width = img_width + 'px';
         img_5.style.width = img_width + 'px';
+        img_list.firstElementChild.style.width = img_width + 'px';
+        img_list.lastElementChild.style.width = img_width + 'px';
         
         img_list.style.transition = '0ms';
         img_list.style.transform = "translate3d(-" + img_width * cur_index + 'px, 0px, 0px)';
@@ -204,6 +208,8 @@ $(window).resize(() => {
         img_3.style.width = img_width + 'px';
         img_4.style.width = img_width + 'px';
         img_5.style.width = img_width + 'px';
+        img_list.firstElementChild.style.width = img_width + 'px';
+        img_list.lastElementChild.style.width = img_width + 'px';
         
         img_list.style.transition = '0ms';
         img_list.style.transform = "translate3d(-" + img_width * cur_index + 'px, 0px, 0px)';
